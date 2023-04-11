@@ -10,7 +10,7 @@ export default function Main () {
 
     function calculoMedia() {
         const resultado = ((parseInt(nota1)+parseInt(nota2))/2).toFixed(2);
-        setMedia(resultado);
+        setMedia(resultado); 
     }
 
 
