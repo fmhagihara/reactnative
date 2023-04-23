@@ -1,19 +1,27 @@
-import React from 'react';
-import { View, Text, Button } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, Button, TextInput } from 'react-native';
 
-function HomeScreen({navigation}) {
-    return  (
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+
+function HomeScreen({ navigation }) {
+
+
+    return (
+        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
             <Text>Home Screen</Text>
-            <Button 
+            <Button
                 title="Ir para galeria!"
-                onPress={ () => navigation.navigate('Home2')}
+                onPress={() => navigation.navigate('Home2')}
             />
-            <Button 
+            <Button
                 title="Cálculo de média"
-                onPress={ () => navigation.navigate('Média')}
+                onPress={() => navigation.navigate('Média')}
+            />
+            <Button
+                title="Pesquisar filme"
+                onPress={() => navigation.navigate('Filme')}
             />
         </View>
+
     );
 }
 
